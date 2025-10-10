@@ -38,10 +38,9 @@ pipeline {
             }
         }
     }
-    post {
+     post {
         always {
-            echo "Logging out from Docker Hub..."
-            sh 'docker logout'
+            sh 'echo Logging out from Docker Hub...'
         }
     }
 }
